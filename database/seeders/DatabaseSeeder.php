@@ -39,12 +39,10 @@ class DatabaseSeeder extends Seeder
 
 
         //Seeder tabel lain jalankan 1 1 dulu ya
-        // $this->call(BranchSeeder::class);
-        // $this->call(TreatmentCategorySeeder::class);
-        // $this->call(TreatmentSeeder::class);
-        // $this->call(TherapistSeeder::class);
-        // $this->call(TherapistTreatmentSeeder::class);
-
-
+        $this->call(BranchSeeder::class);
+        $this->call(TreatmentCategorySeeder::class);
+        $this->call(TreatmentSeeder::class);
+        $this->call(TherapistSeeder::class);
+        $this->call(TherapistTreatmentSeeder::class);
     }
 }
