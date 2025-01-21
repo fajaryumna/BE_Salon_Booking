@@ -1,20 +1,18 @@
 # API Salonku Booking
 
-Proyek ini adalah aplikasi backend yang dibangun menggunakan Laravel untuk mengelola pemesanan salon. Berikut adalah panduan untuk mengatur proyek ini.
+Proyek ini adalah aplikasi backend yang dibangun menggunakan Laravel untuk melakukan pemesanan salon secara online.
 
-## Persyaratan Lingkungan
+## Environment
 
-Pastikan Anda telah menginstal hal berikut di sistem Anda:
 - **PHP**: versi 8.2 atau lebih tinggi
 - **Laravel**: versi 11.0 atau lebih tinggi
-- **Database**: MySQL atau yang kompatibel
+- **Database**: MySQL
 
-## Library yang Digunakan
+## Library 
 
-Proyek ini menggunakan library berikut:
 - `spatie/laravel-permission`
 
-## Langkah Instalasi Program
+## Langkah Instalasi
 
 1. **Clone Repository**
    Buka terminal Anda dan navigasikan ke direktori tempat Anda ingin menyimpan proyek. Clone repository menggunakan perintah berikut:
@@ -45,11 +43,10 @@ Proyek ini menggunakan library berikut:
    php artisan key:generate
    ```
 
-6. **Install Library Laravel Spatie**
-   Instal dan publikasikan konfigurasi library Spatie:
+6. **Pada file .env, perbarui dan tambahkan variabel berikut**
    ```bash
-   composer require spatie/laravel-permission
-   php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+   DB_CONNECTION=mysql
+   SANCTUM_STATEFUL_DOMAINS=localhost
    ```
 
 7. **Jalankan Migrasi Database**
@@ -75,3 +72,4 @@ Proyek ini menggunakan library berikut:
 
 - Pastikan database telah dikonfigurasi dengan benar di file `.env`.
 - Untuk panduan lengkap tentang API yang tersedia, silakan lihat dokumentasi. 
+- Untuk detail lebih lanjut tentang pengaturan fronent, kunjungi [Repository Frontend Salonku](https://github.com/fajaryumna/FE_Salon_Booking).
