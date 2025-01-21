@@ -6,7 +6,7 @@ Proyek ini adalah aplikasi backend yang dibangun menggunakan Laravel untuk menge
 
 Pastikan Anda telah menginstal hal berikut di sistem Anda:
 - **PHP**: versi 8.2 atau lebih tinggi
-- **Composer**: versi terbaru
+- **Laravel**: versi 11.0 atau lebih tinggi
 - **Database**: MySQL atau yang kompatibel
 
 ## Library yang Digunakan
