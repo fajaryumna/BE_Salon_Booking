@@ -74,4 +74,4 @@ Proyek ini menggunakan library berikut:
 ## Catatan Penting
 
 - Pastikan database telah dikonfigurasi dengan benar di file `.env`.
-- Untuk panduan lengkap tentang API yang tersedia, silakan lihat dokumentasi di repository ini.
+- Untuk panduan lengkap tentang API yang tersedia, silakan lihat dokumentasi. 
