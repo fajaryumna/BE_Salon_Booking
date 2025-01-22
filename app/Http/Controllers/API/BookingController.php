@@ -74,6 +74,14 @@ class BookingController extends BaseController
 
         $startHour = Carbon::parse($branch->start_hour);
         $endHour = Carbon::parse($branch->end_hour);
+
+        if (Carbon::parse($validated['date'])->isToday()) {
+            $currentHour = Carbon::now();
+            if ($currentHour->gt($startHour)) {
+                $startHour = $currentHour->ceilMinute(30); // Membulatkan ke 30 menit berikutnya
+            }
+        }
+        
         $slots = [];
 
         // Generate time slots with 30-minute intervals
@@ -183,7 +191,7 @@ class BookingController extends BaseController
 
         // Kembalikan hasil dalam format JSON
         return $this->sendResponse('Therapists categorized by treatments successfully retrieved', $result);
-    }
+    }   
 
 
     /**
